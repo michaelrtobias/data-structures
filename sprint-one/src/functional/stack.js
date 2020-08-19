@@ -3,9 +3,10 @@ var Stack = function() {
 
   // Use an object with numeric keys to store values
   var storage = {};
-
+  var numberInLine = 1;
   // Implement the methods below
   someInstance.push = function(value) {
+    Object.assign({1: value}, storage);
   };
 
   someInstance.pop = function() {
