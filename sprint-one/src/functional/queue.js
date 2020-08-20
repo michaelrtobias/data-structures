@@ -13,19 +13,16 @@ var Queue = function() {
   };
 
   someInstance.dequeue = function() {
-
     var deletedValue = storage[remove];
-    console.log(deletedValue);
-    delete deletedValue;
+    //delete deletedValue;
+    delete storage[remove];
     remove += 1;
 
     return deletedValue;
   };
 
   someInstance.size = function() {
-    debugger;
-    console.log(storage);
-    console.log(Object.keys(storage).length, '=====');
+
     if (Object.keys(storage).length < 0 ) {
       return 0;
     }
