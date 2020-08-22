@@ -24,7 +24,6 @@ treeMethods.contains = function(target) {
       doesContain = true;
     }
     if (obj.children.length > 0) {
-
       obj.children.forEach(element => amberAlert(element));
     }
   };
