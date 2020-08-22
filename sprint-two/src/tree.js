@@ -19,6 +19,7 @@ treeMethods.addChild = function(value) {
 
 treeMethods.contains = function(target) {
   var doesContain = false;
+  //amber alert lol
   var amberAlert = function(obj) {
     if (obj.value === target) {
       doesContain = true;
