@@ -64,7 +64,6 @@ Graph.prototype.removeEdge = function(fromNode, toNode) {
 Graph.prototype.forEachNode = function(cb) {
 
   var keys = Object.keys(this);
-  console.log(keys);
   for (var i = 0; i < keys.length; i++) {
     cb(keys[i]);
 
